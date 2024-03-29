@@ -24,12 +24,14 @@
 
  #### Install the dependencies
 
-``` npm install
+```
+npm install
 ```
 
 
   #### Run on local server
 
-  ```npm run dev
+  ```
+npm run dev
 ```
 
