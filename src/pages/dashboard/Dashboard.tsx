@@ -5,7 +5,7 @@ import styles from "./Dashboard.module.css";
 import Sidebar from "./components/Sidebar";
 import { useState } from "react";
 import { Roboto } from "next/font/google";
-import type { IProduct } from "./types";
+import type { IProduct } from "@/types/index";
 
 const roboto = Roboto({ subsets: ["latin"], weight: "700" });
 

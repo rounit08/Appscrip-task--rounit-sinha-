@@ -3,8 +3,7 @@ import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import Dashboard from "./dashboard/Dashboard";
 import Footer from "@/components/Footer";
-import { IProduct } from "./dashboard/types";
-import { Metadata } from "next";
+import type { IProduct } from "@/types/index";
 
 const inter = Inter({ subsets: ["latin"] });
 
