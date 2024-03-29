@@ -1,0 +1,115 @@
+.container {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 12vw;
+  justify-content: space-evenly;
+  height: 70vh;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+.middle {
+  display: flex;
+  justify-content: space-between;
+}
+.bottom {
+  text-align: center;
+  margin-top: 4%;
+}
+.topLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.topLeft h1 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.topLeft p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.subscribe {
+  gap: 20px;
+  display: flex;
+}
+
+.subscribe button {
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #000;
+  border: 1.14px solid #fff;
+  height: 48px;
+  width: 184px;
+  opacity: 30%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.subscribe input {
+  background-color: #fff;
+  padding: 14px 24px;
+  height: 47px;
+  width: 384px;
+  color: black;
+  font-size: 18px;
+}
+
+.subscribe input::placeholder {
+  color: #bfc8cd;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.topRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 25vh;
+}
+
+.topRight h1 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.topRight p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.currency {
+  display: flex;
+  justify-content: space-between;
+  width: 5vw;
+}
+
+.middle {
+  margin-top: 20px;
+}
+.middle li {
+  list-style: none;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 7px;
+  font-style: Roboto;
+}
+
+.middle ul {
+  margin-top: 10px;
+}
+.middleLeft p {
+  font-size: 24.71px;
+  font-weight: 700;
+}
+.middleMiddle p,
+.middleRight p {
+  font-size: 20px;
+  font-weight: 700;
+}

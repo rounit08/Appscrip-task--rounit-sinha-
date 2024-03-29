@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 20px;
+}
+
+.details h1 {
+  font-weight: 700;
+}
+
+.details {
+  color: #252020;
+  font-size: 18px;
+  width: 100%;
+}
+
+.details p {
+  font-weight: 400;
+}
+
+.select {
+  background: white;
+  color: #252020;
+  border: none;
+  width: 100%;
+}

@@ -1,4 +1,7 @@
+import { Inter, Roboto } from "next/font/google";
 import styles from "./Header.module.css";
+
+const inter = Inter({ subsets: ["latin"], weight: "800" });
 
 const Header = () => {
   return (
@@ -10,7 +13,7 @@ const Header = () => {
       </div>
       <div className={styles.bottom}>
         <img src="./././." alt="logo" />
-        <h1>LOGO</h1>
+        <h1 className={inter.className}>LOGO</h1>
         <div className={styles.iconContainer}>
           <div>Se</div>
           <div>He</div>
