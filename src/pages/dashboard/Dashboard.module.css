@@ -1,12 +1,16 @@
 .cardSection {
   display: flex;
-  gap: 16px;
+  gap: 35px 20px;
   flex-wrap: wrap;
-  margin: 0 5vw;
-  flex: 0.8;
+  margin-left: 3.2rem;
+  flex: 0.75;
 }
 
 .content {
   display: flex;
   margin: 0 80px;
+}
+
+.newprod {
+  margin: 20px 90px;
 }

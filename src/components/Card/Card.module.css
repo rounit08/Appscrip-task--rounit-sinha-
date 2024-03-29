@@ -1,31 +1,42 @@
-.card {
+.container {
   display: flex;
   flex-direction: column;
+  width: 300px;
 }
 
+.image {
+  box-shadow: 7px 7px 10px whitesmoke, -7px -7px 10px whitesmoke;
+  object-fit: contain;
+}
 .description {
   display: flex;
+  margin: 10px 0px;
+}
+.description h1 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 18px;
+  margin-top: 4%;
+  width: 70%;
 }
 
 .left {
-  flex: 0.9;
+  width: 90%;
 }
 
-.left h1 {
-  font-size: 18px;
-}
 .left p {
   color: #888792;
+  font-size: 13px;
 }
 .left span {
   text-decoration: underline;
   cursor: pointer;
 }
 .right {
-  flex: 0.1;
+  /* flex: 0.1; */
   color: #000;
   display: flex;
   align-items: end;
   font-size: 28px;
-  margin-left: 10px;
 }

@@ -1,23 +1,34 @@
-import Head from "next/head";
-import Image from "next/image";
 import { Inter, Roboto } from "next/font/google";
-import styles from "@/styles/Home.module.css";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import Dashboard from "./dashboard/Dashboard";
 import Footer from "@/components/Footer";
+import { IProduct } from "./dashboard/types";
 
 const inter = Inter({ subsets: ["latin"] });
 
 const roboto = Roboto({ weight: "700", subsets: ["latin"] });
 
-export default function Home() {
+interface IDataProps {
+  data: IProduct[];
+}
+
+export default function Home({ data }: IDataProps) {
   return (
     <>
       <Header />
       <Navbar />
-      <Dashboard />
+      <Dashboard products={data} />
+
       <Footer />
     </>
   );
+}
+
+export async function getServerSideProps() {
+  const res = await fetch("https://fakestoreapi.com/products?limit=15");
+
+  const data = await res.json();
+
+  return { props: { data } };
 }

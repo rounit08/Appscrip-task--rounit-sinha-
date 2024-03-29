@@ -3,9 +3,9 @@
   color: #fff;
   display: flex;
   flex-direction: column;
-  padding: 30px 12vw;
-  justify-content: space-evenly;
-  height: 70vh;
+  padding: 10vh 15vw 5vh 15vw;
+  gap: 30px;
+  margin-top: 3vh;
 }
 
 .top {
@@ -97,12 +97,12 @@
   list-style: none;
   font-size: 18px;
   font-weight: 400;
-  margin-top: 7px;
+  margin-top: 15px;
   font-style: Roboto;
 }
 
 .middle ul {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .middleLeft p {
   font-size: 24.71px;
@@ -112,4 +112,22 @@
 .middleRight p {
   font-size: 20px;
   font-weight: 700;
+}
+.middleRight {
+  display: flex;
+  flex-direction: column;
+  gap: 6vh;
+}
+
+.paymentGateway {
+  display: flex;
+  justify-content: space-around;
+  width: 376px;
+}
+
+.paymentGateway img {
+  aspect-ratio: 3/4;
+  background-color: white;
+  border-radius: 5px;
+  object-fit: contain;
 }

@@ -1,3 +1,30 @@
 .container {
-  flex: 0.2;
+  flex: 0.25;
+  animation: open 3s ease-in-out;
+}
+
+.custom {
+  font-size: 18px;
+  color: #252020;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 50px;
+  display: flex;
+  margin-top: 4%;
+}
+
+.custom input {
+  height: 20px;
+  width: 50px;
+  background-color: white;
+}
+
+@keyframes open {
+  0% {
+    width: 0%;
+    opacity: 0.1;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
 }

@@ -9,6 +9,8 @@
   display: flex;
   justify-content: space-around;
   font-weight: 300;
+  padding: 8px 274px;
+  font-size: 12px;
 }
 .bottom {
   display: flex;
@@ -21,4 +23,30 @@
   display: flex;
   gap: 10px;
   justify-content: space-between;
+  align-items: center;
+}
+
+.topContent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.topContent img {
+  height: 16px;
+  width: 16px;
+}
+
+.iconContainer img {
+  height: 24px;
+  width: 24px;
+}
+
+.lang {
+  display: flex;
+  align-items: center;
+}
+.lang img {
+  height: 14px;
+  width: 14px;
 }

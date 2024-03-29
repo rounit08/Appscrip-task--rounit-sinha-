@@ -13,14 +13,30 @@
   gap: 50px;
 }
 .filter {
-  color: #888792;
-  text-decoration: underline;
   cursor: pointer;
-  font-size: 16px;
 }
 
+.filter p {
+  font-size: 16px;
+  color: #888792 !important;
+  text-decoration: underline;
+  font-weight: 400;
+}
 .menu p {
   color: #252020;
   font-weight: 700;
   font-size: 18px;
+}
+
+.select {
+  background-color: white;
+  color: #000;
+  border: none;
+  font-size: 18px;
+}
+
+.select option {
+  background-color: white;
+  font-size: 18px;
+  padding: 20px;
 }

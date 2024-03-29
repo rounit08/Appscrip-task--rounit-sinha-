@@ -1,23 +1,34 @@
+import { Roboto } from "next/font/google";
 import styles from "./Card.module.css";
+import HeartIcon from "@/assets/icons/heart.png";
+import Image from "next/image";
+const robotoBold = Roboto({ subsets: ["latin"], weight: "700" });
+const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 
-const Card = () => {
+interface ICardProps {
+  imageUrl: string;
+  title: string;
+}
+const Card = ({ imageUrl, title }: ICardProps) => {
   return (
-    <div className={styles.card}>
-      <img
+    <div className={styles.container}>
+      <Image
         className={styles.image}
-        src="https://images.pexels.com/photos/5214139/pexels-photo-5214139.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        src={imageUrl}
         alt="card__image"
-        height="399px"
-        width="300px"
+        height={399}
+        width={300}
       />
       <div className={styles.description}>
         <div className={styles.left}>
-          <h1>SOMETHING SOMETHING DOT...</h1>
-          <p>
+          <h1 className={robotoBold.className}>{title}</h1>
+          <p className={roboto.className}>
             <span>Sign in</span> or Create an account to see pricing
           </p>
         </div>
-        <div className={styles.right}>♡</div>
+        <div className={styles.right}>
+          <Image src={HeartIcon} alt="heartIcon" />
+        </div>
       </div>
     </div>
   );
