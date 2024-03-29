@@ -1,0 +1,14 @@
+.spotlight {
+  color: #252020;
+  text-align: center;
+  padding: 90px 30vw;
+}
+
+.spotlight > h1 {
+  font-size: 40px;
+}
+
+.spotlight > p {
+  font-size: 22px;
+  margin-top: 20px;
+}
