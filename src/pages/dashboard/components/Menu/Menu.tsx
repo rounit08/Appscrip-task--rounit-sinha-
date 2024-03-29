@@ -5,10 +5,12 @@ const Menu = () => {
       <div className={styles.menuLeft}>
         <p>3425 ITEMS</p>
         <div role="button" className={styles.filter}>
-        >  SHOW FILTER
+          {"<"} SHOW FILTER
         </div>
       </div>
-      <div><p>RECOMMENDED </p> </div>
+      <div>
+        <p>RECOMMENDED v</p>
+      </div>
     </div>
   );
 };

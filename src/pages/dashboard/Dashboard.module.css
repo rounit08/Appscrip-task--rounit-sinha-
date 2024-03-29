@@ -1,0 +1,6 @@
+.cardSection {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 0 5vw;
+}
