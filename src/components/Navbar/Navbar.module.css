@@ -7,3 +7,9 @@
   border-bottom: 1px solid #e5e5e5;
   padding-bottom: 24px;
 }
+
+@media screen and (max-width: 450px) {
+  .navbar {
+    display: none;
+  }
+}

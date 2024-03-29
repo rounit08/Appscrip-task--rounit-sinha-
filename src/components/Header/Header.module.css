@@ -50,3 +50,34 @@
   height: 14px;
   width: 14px;
 }
+.hamMenu {
+  display: none;
+}
+
+@media screen and (max-width: 450px) {
+  .topContent {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top {
+    padding: 10px;
+  }
+  .topContent:nth-child(2),
+  .topContent:nth-child(3) {
+    display: none;
+  }
+  .hamMenu {
+    display: block;
+    font-size: 24px;
+  }
+  .iconContainer div:nth-child(4),
+  .iconContainer div:nth-child(5) {
+    display: none;
+  }
+  .bottom {
+    justify-content: space-between;
+    padding: 30px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+}

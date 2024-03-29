@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Dashboard from "./dashboard/Dashboard";
 import Footer from "@/components/Footer";
 import { IProduct } from "./dashboard/types";
+import { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
 

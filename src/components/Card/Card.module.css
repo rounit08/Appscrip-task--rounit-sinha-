@@ -40,3 +40,23 @@
   align-items: end;
   font-size: 28px;
 }
+
+@media screen and (max-width: 450px) {
+  .image {
+    height: 224px;
+    width: 128px;
+  }
+  .container {
+    width: 128px;
+    height: 277px;
+  }
+  .description {
+    width: 30vw;
+  }
+  .description h1 {
+    font-size: 14px;
+  }
+  .left p {
+    font-size: 10px;
+  }
+}

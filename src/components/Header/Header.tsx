@@ -31,7 +31,11 @@ const Header = () => {
         </div>
       </div>
       <div className={styles.bottom}>
-        <Image src={headerLogo} alt="logo" />
+        <div style={{ display: "flex", gap: 10 }}>
+          <span className={styles.hamMenu}>☰</span>
+          <Image src={headerLogo} alt="logo" />
+        </div>
+
         <h1 className={inter.className}>LOGO</h1>
         <div className={styles.iconContainer}>
           <div>

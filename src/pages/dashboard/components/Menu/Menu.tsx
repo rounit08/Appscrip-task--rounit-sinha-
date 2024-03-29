@@ -11,7 +11,7 @@ interface IMenuProps {
 
 const Menu = ({ handleOnClick, isSidebar }: IMenuProps) => {
   return (
-    <div className={styles.menu}>
+    <div className={styles.container}>
       <div className={styles.menuLeft}>
         <p className={roboto.className}>3425 ITEMS</p>
         <div role="button" className={styles.filter} onClick={handleOnClick}>

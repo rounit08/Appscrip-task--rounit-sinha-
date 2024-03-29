@@ -13,12 +13,14 @@ interface IProductsProps {
   products: IProduct[];
 }
 
-const Dashboard = ({ products }: IProductsProps) => {
+const Dashboard = ({ products = [] }: IProductsProps) => {
   const [isSidebar, setIsSidebar] = useState(false);
 
   const toggleSidebar = () => {
     setIsSidebar((isSidebar) => !isSidebar);
   };
+
+  const isProductsEmpty = !products || products.length < 1;
 
   return (
     <>
@@ -39,6 +41,7 @@ const Dashboard = ({ products }: IProductsProps) => {
                 <Card imageUrl={product.image} title={product.title} />
               </div>
             ))}
+            {isProductsEmpty && <div>NODATA</div>}
           </section>
         </div>
       </section>

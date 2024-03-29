@@ -14,3 +14,14 @@
 .newprod {
   margin: 20px 90px;
 }
+
+@media screen and (max-width: 450px) {
+  .cardSection {
+    margin-left: -3em;
+    width: 90vw;
+    gap: 1em 3.5em;
+  }
+  .newprod {
+    margin: 1em -3em;
+  }
+}

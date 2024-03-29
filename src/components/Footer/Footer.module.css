@@ -131,3 +131,75 @@
   border-radius: 5px;
   object-fit: contain;
 }
+
+@media screen and (max-width: 450px) {
+  .top {
+    flex-direction: column;
+  }
+  .subscribe {
+    margin-top: -4em;
+  }
+  .subscribe input {
+    width: 70%;
+    padding: 0.6em;
+  }
+  .subscribe input::placeholder {
+    font-size: 0.8em;
+  }
+  .subscribe button {
+    width: 25%;
+    font-size: 0.7em;
+  }
+  .container {
+    padding: 2em;
+  }
+  .number {
+    display: flex;
+    gap: 25px;
+    border-bottom: 2px solid white;
+    padding: 10px;
+  }
+  .number p {
+    font-size: 0.8em;
+  }
+  .currency {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .topRight > p {
+    display: none;
+  }
+  .middle {
+    flex-direction: column;
+  }
+  .accordionHeader {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    border-bottom: 1px solid #fff;
+  }
+
+  .middleLeft {
+    margin-top: -3em;
+  }
+  .accordionContent {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+  .social {
+    margin-top: 2em;
+  }
+  .paymentGateway {
+    width: 87vw;
+    gap: 5px;
+  }
+  .topRight {
+    margin-top: 2em;
+  }
+}
